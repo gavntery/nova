@@ -6,7 +6,7 @@
  * Time: AM10:51
  */
 
-namespace Nova\Framework;
+namespace Nova\Application\Helper;
 
 
 class PDOMysql

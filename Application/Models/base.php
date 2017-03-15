@@ -7,12 +7,12 @@
  */
 
 namespace Nova\Application\Models;
-use Nova\Framework;
+use Nova\Application\Helper\PDOMysql;
 
 
 class base
 {
     protected function getDb() {
-        return Framework\PDOMysql::connect()->db;
+        return PDOMysql::connect()->db;
     }
 }
