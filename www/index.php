@@ -18,8 +18,8 @@ define('LOG_DIR', ROOT_DIR.'/logs');
 
 define('WWW_DIR', __DIR__.'/');
 
-define('DEBUG_MODE', true);
+define('TIMEZONE', 'Asia/Shanghai');
 
-define('HOST_URL', 'http://localhost/nova');
+ini_set('data.timezone', TIMEZONE);
 
 require FRAMEWORK_DIR.'/init.php';

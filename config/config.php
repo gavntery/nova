@@ -7,3 +7,8 @@
  */
 
 require 'dbconfig.php';
+
+define('DEBUG_MODE', true);
+
+define('HOST_URL', 'http://localhost/nova');
+

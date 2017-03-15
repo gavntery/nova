@@ -7,6 +7,7 @@
  */
 namespace Nova\Application\Controllers;
 use Nova\Application\Models;
+use Nova\Application\Helper;
 
 class index
 {
@@ -14,6 +15,10 @@ class index
     {
         $mIndex = new Models\index();
 
-        print_r($mIndex->getAllUser());
+        $user = $mIndex->getAllUser();
+
+        Helper\SysLog::log($user, __METHOD__, 'log', 'main');
+
+        print_r($user);
     }
 }
