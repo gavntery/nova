@@ -12,9 +12,7 @@ use Nova\Framework;
 
 class base
 {
-    protected $db = null;
-
     protected function getDb() {
-        $this->db = Framework\PDOMysql::connect()->db;
+        return Framework\PDOMysql::connect()->db;
     }
 }

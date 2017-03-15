@@ -44,7 +44,7 @@ class PDOMysql
             exit();
         }
 
-        if ($autoCLose) {
+        if ($autoClose) {
             register_shutdown_function(array(
                 &$this,
                 'close_pdomysql'

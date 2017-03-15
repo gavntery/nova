@@ -6,11 +6,14 @@
  * Time: PM9:50
  */
 namespace Nova\Application\Controllers;
+use Nova\Application\Models;
 
 class index
 {
     public function main()
     {
-        echo 'Hello World!';
+        $mIndex = new Models\index();
+
+        print_r($mIndex->getAllUser());
     }
 }
