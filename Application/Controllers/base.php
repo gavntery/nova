@@ -12,8 +12,15 @@ require_once APP_DIR . '/Library/Smarty/Autoloader.php';
 
 class base
 {
+    public $smarty;
+
     public function __construct()
     {
-        Smarty_Autoloader::register();
+        \Smarty_Autoloader::register();
+        $this->smarty = new \Smarty();
+        $this->smarty->setTemplateDir(APP_DIR.'/Views/');
+        $this->smarty->setCompileDir(ROOT_DIR.'/compiled/');
+        $this->smarty->setConfigDir(CONFIG_DIR.'/smarty/');
+        $this->smarty->setCacheDir(ROOT_DIR.'/cache/');
     }
 }

@@ -19,6 +19,9 @@ class index extends base
 
         Helper\SysLog::log($user, __METHOD__, 'log', 'main');
 
-        print_r($user);
+//        print_r($user);
+        $this->smarty->assign('users', $user);
+
+        $this->smarty->display('index.tpl');
     }
 }
