@@ -9,7 +9,7 @@ namespace Nova\Application\Controllers;
 use Nova\Application\Models;
 use Nova\Application\Helper;
 
-class index
+class index extends base
 {
     public function main()
     {
