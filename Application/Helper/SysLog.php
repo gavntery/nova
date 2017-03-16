@@ -36,6 +36,7 @@ class SysLog
         }
 
         if (!empty($method)) {
+            $method = substr($method, strlen("Nova\\Application\\"));
             $method = "[{$method}]";
         }
 
