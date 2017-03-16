@@ -1,3 +1,3 @@
 # Nova
 
-## A Simple PHP Framework
+## A Concise PHP Framework
