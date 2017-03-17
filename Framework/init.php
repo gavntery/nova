@@ -11,9 +11,9 @@ require CONFIG_DIR . '/config.php';
 
 require 'Autoloader.php';
 
-
-
 Autoloader::init();
+
+Session::start();
 
 $core = new Core;
 

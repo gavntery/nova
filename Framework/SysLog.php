@@ -6,7 +6,7 @@
  * Time: PM4:10
  */
 
-namespace Nova\Application\Helper;
+namespace Nova\Framework;
 
 
 class SysLog

@@ -7,7 +7,7 @@
  */
 namespace Nova\Application\Controllers;
 use Nova\Application\Models;
-use Nova\Application\Helper;
+use Nova\Framework\Syslog;
 
 class index extends base
 {
@@ -17,9 +17,6 @@ class index extends base
 
         $user = $mIndex->getAllUser();
 
-        Helper\SysLog::log($user, __METHOD__, 'log', 'main');
-
-//        print_r($user);
         $this->smarty->assign('users', $user);
 
         $this->smarty->display('index.tpl');

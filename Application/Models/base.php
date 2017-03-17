@@ -7,7 +7,7 @@
  */
 
 namespace Nova\Application\Models;
-use Nova\Application\Helper\PDOMysql;
+use Nova\Framework\PDOMysql;
 
 
 class base
